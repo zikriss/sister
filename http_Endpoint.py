@@ -1,7 +1,7 @@
 import requests
 
-url = "http://localhost:1880/kelas-post"
-payload = "samlekum"
-r = requests.post(url, data=payload)
+url = "http://localhost:1880/kelas-json"
+payload = {'nama' : 'namaaaaa', "nim" : 130, 'pesan':'sani'}
+r = requests.post(url, json=payload)
 print(r)
 print(r.text)
